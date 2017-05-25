@@ -1,9 +1,15 @@
-latex template for thesis (PhD)
+### latex template for thesis (PhD)
 
-with abstract, title page, copyright page, contents, references, etc.  
-* the list of figures/tables & contents will be updated automatically, while the nomenclature has to be typed
-
-with organization folders for figures, chapters and appendices
+including:  
+1. abstract, title page, copyright page, etc.
+ * the list of figures/tables & contents will be updated automatically, while the nomenclature has to be typed
+ * pages are counted but page number not printed.
+2. acknowledgements, contents, list of figures, etc.
+ * pages are numbered with Roman numeral
+3. chapters, appendices, references
+ * page number: Arabic numbers
+ * organized by folders
+ * figure directory specified in thesis.tex
 
 to execute:  
 remember to follow these steps twice:  
