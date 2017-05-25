@@ -1,2 +1,2 @@
 # Templates
-My templates for files, websites, etc.
+My templates for latex files, websites, etc.
