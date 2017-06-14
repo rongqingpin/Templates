@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>About</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link rel="stylesheet" type="text/css" href="{% static 'ie10-viewport-bug-workaround.css' %}">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="{% static 'summary.css' %}">
+	<!--<link rel="stylesheet" href="{% static 'homepage.css' %}">-->
+</head>
+
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Project Depot</h3>
+
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <!-- Home page -->
+                                <li><a href="../">Home</a></li>
+                                <!-- Time series -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Time Series<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../timeseries/algorithm">Acoustic Event Detection</a></li>
+                                        <li><a href="../timeseries/visualize">Structure Visualization</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Images -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Images<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../images/waves">Wave Tracking</a></li>
+                                    </ul>
+                                </li>
+                                <!-- About -->
+                                <li class="active"><a href="#">About Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div class="inner">
+                        <h4>Pinqing Kan, PhD</h4>
+                        <br />
+                        <table>
+                            <tr>
+                                <td>Phone</td>
+                                <td>315-741-0877</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>rongqingpin@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>GitHub</td>
+                                <td><a href="https://github.com/rongqingpin">my repositories</a></td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td><a href="https://www.linkedin.com/in/pinqing-kan">my profile</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p align="center">&copy; 2017 Melanie Kan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="../static/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

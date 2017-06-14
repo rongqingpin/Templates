@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PhD Research Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="{% static 'ie10-viewport-bug-workaround.css' %}">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{% static 'blog.css' %}">
+</head>
+
+
+<body>
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="../../#">Home</a>
+                <a class="blog-nav-item active" href="#">Motivation</a>
+                <a class="blog-nav-item" href="techniques">Workflow &amp; Techniques</a>
+                <a class="blog-nav-item" href="outcome">Outcome</a>
+                <a class="blog-nav-item" href="../algorithm">Application</a>
+                <!--a class="blog-nav-item" href="../../images/waves">Images</a>
+                <a class="blog-nav-item" href="../../about">About</a-->
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">Acoustic Event Detection</h1>
+            <p class="lead blog-description">Extract acoustic source from time series; identify and visualize event-associated structures</p>
+        </div>
+        <div class="blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title">Motivation: Reduction of Aircraft Noise</h2>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../../static/airplane-noise-300x243.jpg" alt = "aircraft-noise" style="width:100%">
+                    </div>
+                    <div class="col-sm-9">
+                        <ul>
+                            <li>Sustained exposure to aircraft noise (e.g., air crews) can lead to hearing damage and loss.</li>
+                            <li>Expansion of airports threatens more residences with noise pollution.</li>
+                        </ul>
+                        <p>My research focused on the noise from air flow, since over 50% of aircraft noise comes from the engine exhaust.</p>
+                    </div>
+                </div>
+                <br>
+                <h2 class="blog-post-title">Problem Statement</h2>
+                <br>
+                <div>
+                    <img src="../../static/jetnoiseproblem.png" alt = "problem-statement" style="width:100%">
+                </div>
+                <br>
+                <h3>Given:</h3>
+                <ul>
+                    <li>Aircraft <span style="background-color: #3e8e91">noise</span> measured as acoustic signals (time series)</li>
+                    <li>Flow quantities (e.g. velocity) measured as 1D time series / 2D images, which contain both</li>
+                        <ul>
+                            <li>Noise-producing structures (<span style="background-color: #8cd4fb">events</span>)</li>
+                            <li>Those unrelated to noise production</li>
+                        </ul>
+                </ul>
+                <h3>Task:</h3>
+                <ul>
+                    <li>Isolate the noise-producing events</li>
+                    <li>Identify &amp; the event-associated structures</li>
+                </ul>
+                <h3>Approach:</h3>
+                <ul>
+                    <li><a href="algorithm">Event detection algorithm</a> (time-frequency signal processing, statistical signal processing, pattern recognition)</li>
+                    <li>New time-frequency &amp; statistical <a href="visualize">visualization techniques</a> for structure identification</li>
+                </ul>
+                <!--img src="../static/problemstatement.png" alt = "problem-statement" style="width:100%"-->
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+      <p>&copy; 2017 Melanie Kan</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="../../static/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../static/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

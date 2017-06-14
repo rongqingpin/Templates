@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PhD Research Projects</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link rel="stylesheet" type="text/css" href="{% static 'ie10-viewport-bug-workaround.css' %}">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="{% static 'overview.css' %}">
+	<!--<link rel="stylesheet" href="{% static 'homepage.css' %}">-->
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="masthead">
+            <h3 class="text-muted">Acoustic Event Detection</h3>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li><a href="../../#">Home</a></li>
+                    <li><a href="algorithm/motivation">Motivation</a></li>
+                    <li><a href="algorithm/techniques">Workflow</a></li>
+                    <li><a href="algorithm/outcome">Outcome</a></li>
+                    <li class="active"><a href="#">Application</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="jumbotron">
+            <img src="../static/synthetic.png" style="width: 100%">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>Motivation &amp; Problem Statement</h3>
+                <p>Given the acoustic signals (e.g. the noise produced by airplanes), can we identify the source (e.g. certain flow structures of the engine exhaust) which produce them?</p>
+                <p><a class="btn btn-primary" href="algorithm/motivation" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-lg-6">
+                <h3>Workflow &amp; Techniques</h3>
+                <p>
+                    <ol>
+                        <li><strong>Data Cleaning</strong>: denoising; detrending; down-sampling; faulty data detection &amp; replacement</li>
+                        <li><strong>Data Exploration</strong>: statistical signal processing; spectral analysis</li>
+                        <li><strong>Big Data Problem</strong>: resolved through constructing representative signals</li>
+                        <li><strong>Event Detection Algorithm</strong>: statistical signal processing; time-frequency signal processing; pattern recognition; criterion optimization</li>
+                        <li><strong>Algorithm Testing &amp; Evaluation</strong>: randomized signals; synthetic signals; real data</li>
+                        <li><strong>Event-Based Analysis</strong>: statistics; signal filtering; conditional averaging; event-conditioned analysis</li>
+                    </ol>
+                </p>
+                <p><a class="btn btn-primary" href="algorithm/techniques" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-lg-3">
+                <h3>Outcome</h3>
+                <p>
+                    <ul>
+                        <li>Identified the location, time &amp; frequency of occurrence of the acoustic sources of high speed jet flows (over 90% accuracy)</li>
+                        <li>Extracted the structure features and the flow activities associated with noise production</li>
+                    </ul>
+                </p>
+                <p><a class="btn btn-primary" href="algorithm/outcome" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2017 Melanie Kan</p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+    </div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="../static/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

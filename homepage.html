@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Melanie's Website</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link rel="stylesheet" type="text/css" href="{% static 'ie10-viewport-bug-workaround.css' %}">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}">
+
+</head>
+
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Project Depot</h3>
+
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <!-- Home page -->
+                                <li class="active"><a href="#">Home</a></li>
+                                <!-- Time series -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Time Series<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="timeseries/algorithm">Acoustic Event Detection</a></li>
+                                        <li><a href="timeseries/visualize">Structure Visualization</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Images -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Images<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="images/waves">Wave Tracking</a></li>
+                                    </ul>
+                                </li>
+                                <!-- About -->
+                                <li><a href="about">About Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="text">
+                              Structure extraction &amp; pathway visualization of large datasets, using statistical &amp; time-frequency signal analysis
+                            </div>
+                            <img src="../static/structure.png" alt = "some text" style="width:100%">
+                            <div class="numbertext">1 / 3</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="text">
+                              Acoustic event detection algorithm which combines wavelet analysis, multi-correlation &amp; pattern recognition
+                            </div>
+                            <img src="../static/algorithm.png" alt = "some text" style="width:100%">
+                            <div class="numbertext">2 / 3</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="text">
+                              Event-conditioned signal filtering, statistics &amp; ensemble averaging reveal structures &amp; patterns of interest
+                            </div>
+                            <img src="../static/events.png" alt = "some text" style="width:100%">
+                            <div class="numbertext">3 / 3</div>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                        </div>
+                    </div>
+
+                    <script>
+                      var slideIndex = 0;
+                      showSlides();
+                      function showSlides() {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none"; 
+                          }
+                          slideIndex++;
+                          if (slideIndex> slides.length) {slideIndex = 1} 
+                          slides[slideIndex-1].style.display = "block"; 
+                          setTimeout(showSlides, 5000); // Change image every 2 seconds
+                      }
+                    </script>
+
+                    <br />
+
+                    <div class="row">
+                        <p class="lead">
+                            Pattern Extraction and Problem Solving through <br />Signal Processing and Algorithm Design
+                        </p>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p align="center">&copy; 2017 Melanie Kan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="../static/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

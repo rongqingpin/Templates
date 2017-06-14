@@ -1,0 +1,151 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-color: #FFFFFF;
+}
+body {
+  color: #36234B; /* this is the name of the homepage */
+  text-align: center;
+  text-shadow: none;
+  /* text-shadow: 0 1px 3px rgba(0,0,0,.5); */
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px #B8BEDD; /*rgba(0,0,0,.5); */
+          box-shadow: inset 0 0 100px #B8BEDD; /*rgba(0,0,0,.5); */
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #36234B; /* rgba(255,255,255,.75); */
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #36234B;
+}
+.masthead-nav > .dropdown > a:focus {
+  border-bottom-color: #79529E;
+  background-color: #B8BEDD;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  border-bottom-color: #79529E;
+  color: #79529E;
+}
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 20px;
+  color: #36234B;
+}
+td {
+  text-align: left;
+}
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: #36234B;
+  text-align: center;
+}
+
+/*
+ * Affix and center
+ */
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+@media (min-width: 992px) {
+  .masthead,
+  .cover-container {
+    width: 700px;
+  }
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
