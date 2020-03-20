@@ -9,3 +9,9 @@ initialization files for dash plotly app
     - should install dash, plotly, gunicorn
 3. initialize utility files: `.gitignore`, `Procfile`, `requirements.txt`, `runtime.txt`
 4. initialize `app.py`
+5. initialize app `appName` on dash portal
+6. set up remote repository connection
+  1. `$ git remote add plotly https://username:password@dash.pall.com/GIT/appName`
+  2. `$ git add .`
+  3. `$ git commit -m "…"`
+  4. `$ git push plotly master`
