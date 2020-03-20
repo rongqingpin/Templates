@@ -7,3 +7,5 @@ initialization files for dash plotly app
   3. `$ virtualenv venv`
   4. `$ source venv/bin/activate` in linux, or `venv\Scripts\activate` in windows
     - should install dash, plotly, gunicorn
+3. initialize utility files: `.gitignore`, `Procfile`, `requirements.txt`, `runtime.txt`
+4. initialize `app.py`
